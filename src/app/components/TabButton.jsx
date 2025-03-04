@@ -1,7 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // Cite: Framer Motion - React Animation Library - https://framermotion.framer.website/documentation/examples
 
-const variants = {
+const variants = { //https://framermotion.framer.website/documentation/examples#variants
   default: { width: 0 },
   active: { width: "calc(100% - 0.75rem)" },
 };
@@ -16,8 +16,8 @@ const TabButton = ({ active, selectTab, children }) => {
       </p>
       <motion.div
         animate={active ? "active" : "default"}
-        variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        variants={variants} //https://framermotion.framer.website/documentation/examples#variants
+        className="h-1 bg-teal-500 mt-2 mr-3"
       ></motion.div>
     </button>
   );
