@@ -26,8 +26,6 @@ const HeroSection = () => {
               sequence={[
                 "Kat Costales",
                 2000,
-                "Front-End Engineer",
-                2000,
                 "UX/UI Designer",
                 2000,
                 "UX Researcher",
@@ -36,10 +34,11 @@ const HeroSection = () => {
                 2000,
                 "Web/App Developer",
                 2000,
-
+                "Front-End Engineer",
+                2000,
               ]}
               wrapper="span"
-              speed={20}
+              speed={10}
               repeat={Infinity}
             />
           </h1>
@@ -74,7 +73,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#212020] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative hover:motion-reduce:animate-spin duration-150 delay-2000 shadow-lg shadow-zinc-500/50 ">
+          <div className="rounded-full hover:animate-spin-once bg-[#212020] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative duration-150 shadow-lg shadow-zinc-500/50">
             <Image
               src="/images/landing-profile.png"
               alt="profile image"
@@ -86,20 +85,6 @@ const HeroSection = () => {
         </motion.div>
 
       </div>
-      <Wave
-        mask="url(#mask)"
-        fill="#76b6c4"
-      >
-        <defs>
-          <linearGradient id="gradient" gradientTransform="rotate(90)" height={50}>
-            <stop offset="0" stopColor="white" />
-            <stop offset="0.5" stopColor="black" />
-          </linearGradient>
-          <mask id="mask">
-            <rect x="0" y="0" width="100%" height="200" fill="url(#gradient)" />
-          </mask>
-        </defs>
-      </Wave>
 
 
     </section>
