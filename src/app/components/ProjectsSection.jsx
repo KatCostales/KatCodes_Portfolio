@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://www.bluehost.com/blog/wp-content/uploads/2023/05/parts-of-a-uniform-resource-locator-URL-1024x576.png",
   },
   {
     id: 2,

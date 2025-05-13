@@ -9,7 +9,7 @@ import Wave from 'react-wavify'; //React-Wave https://www.npmjs.com/package/reac
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-full lg:px-full">
+    <section className="lg:py-full lg:px-full lg: pb-30">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -85,6 +85,7 @@ const HeroSection = () => {
         </motion.div>
 
       </div>
+
 
 
     </section>
