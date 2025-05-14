@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
 
       <div className="container mt-24 mx-auto px-12 py-4 overflow-visible">
-        <HeroSection />
+        <HeroSection id="Hero" />
       </div>
       
       <DecSection />

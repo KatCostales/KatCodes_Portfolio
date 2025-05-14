@@ -4,20 +4,23 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
+
+
 const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "Building a React Next.js Portfolio using TailwindCSS, framer-motion, and more!",//
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://www.bluehost.com/blog/wp-content/uploads/2023/05/parts-of-a-uniform-resource-locator-URL-1024x576.png",
+    previewUrl: "/",
+    
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "STEM Summer Research - Innovation Incubator",
+    description: "Worked on 3 Client Projects ranging from MVP's to prototypes. Engaging community tech work 💻",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -25,26 +28,26 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Old Site ReDesign",
+    description: "TIME TRAVEL! Internet Archive lets us travel through technology interfaces through snapshots of companies/softwares",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "file:///Users/katrinacostales/Desktop/Web%20Design/Old%20Site%20ReDesign/index.html",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Parallax Website Research Design",
+    description: "Implementing parallax alongside research into the trends, history, use, and famous cases :)",
     image: "/images/projects/4.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "public/research_webstyle/index.html",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "MultiPageSite",
+    description: "Draft Design and... for the class :D",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -52,12 +55,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "FPC Engagement Summer Fellow",
+    description: "Faith Presbyterian Community Community Engagement fellow consisted of nurturing deep relationships with the Lord, our community, and ourselves. Rooted in love and acceptance. Engaged in maintaining Church website",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://faithpresbyterianchurch.smugmug.com/Fellowship/2022-Summer-Intern-Highlights",
   },
 ];
 

@@ -9,7 +9,7 @@ import Wave from 'react-wavify'; //React-Wave https://www.npmjs.com/package/reac
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-full lg:px-full lg: pb-30">
+    <section className="lg:py-full lg:px-full lg: pb-30" id="Hero">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -55,14 +55,18 @@ const HeroSection = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-500 to-indigo-500 hover:bg-gradient-to-br hover:from-indigo-500 hover:to-emerald-500 text-white mt-3"
+            <a
+              href="/sampleResume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-emerald-500 to-indigo-500 hover:from-indigo-500 hover:to-emerald-500 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+                Download PDF
               </span>
-            </Link>
+            </a>
+
           </div>
 
         </motion.div>
