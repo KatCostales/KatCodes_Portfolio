@@ -15,12 +15,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <Navbar />
 
-      <div className="container mt-24 mx-auto px-12 py-4 overflow-visible">
+      <div className="container mt-24 mx-auto px-0 py-4">
         <HeroSection id="Hero" />
-      </div>
-      
-      <DecSection />
 
+      </div>
+      <div className="container mx-auto py-4">
+        <DecSection />
+      </div>
       <div className="container mx-auto px-12 py-4">
         <AchievementsSection />
         <AboutSection />

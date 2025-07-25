@@ -12,17 +12,17 @@ const projectsData = [
     title: "React Portfolio Website",
     description: "Building a React Next.js Portfolio using TailwindCSS, framer-motion, and more!",//
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
-    
+
   },
   {
     id: 2,
     title: "STEM Summer Research - Innovation Incubator",
     description: "Worked on 3 Client Projects ranging from MVP's to prototypes. Engaging community tech work 💻",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Web", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -40,7 +40,7 @@ const projectsData = [
     title: "Parallax Website Research Design",
     description: "Implementing parallax alongside research into the trends, history, use, and famous cases :)",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", ],
     gitUrl: "public/research_webstyle/index.html",
     previewUrl: "/",
   },
@@ -65,6 +65,9 @@ const projectsData = [
 ];
 
 const ProjectsSection = () => {
+  // State to manage the selected tag
+  // Using useState to manage the currently selected tag
+  // Default is "All" to show all projects initially
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

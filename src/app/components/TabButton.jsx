@@ -17,7 +17,7 @@ const TabButton = ({ active, selectTab, children }) => {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants} //https://framermotion.framer.website/documentation/examples#variants
-        className="h-1 bg-teal-500 mt-2 mr-3"
+        className="h-1 bg-primary-500 mt-2 mr-3"
       ></motion.div>
     </button>
   );
