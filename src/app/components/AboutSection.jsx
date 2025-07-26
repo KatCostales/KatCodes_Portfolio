@@ -23,9 +23,9 @@ const TAB_DATA = [
     id: "interest",
     content: (
       <ul className="list-disc pl-2">
-       <li> Brand Design </li>
-       <li> Front-end web/app development </li>
-       <li> Ethnographic Research - UX Research </li>
+        <li> Brand Design </li>
+        <li> Front-end Web/App Development </li>
+        <li> UX Research - Ethnographic & Psychological Epistemologies </li>
 
       </ul>
     ),
@@ -36,6 +36,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Whitworth University, Spokane, WA</li>
+        <ul>
+          <li>Bachelor of Arts in Human-Computer Interaction</li>
+          <li>Minor in Psychology</li>
+        </ul>
         <li>Marianas High Sschool, Saipan, Northern Mariana Islands </li>
       </ul>
     ),

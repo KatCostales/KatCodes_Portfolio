@@ -1,7 +1,9 @@
 "use client"
 
 import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
+import TooltipBubble from "./components/TooltipBubble";
+import { ChatBubbleOvalLeftIcon } from "@heroicons/react/24/solid";
+
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
@@ -13,7 +15,7 @@ import DecSection from "./components/DecSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
-      <Navbar />
+
 
       <div className="container mt-24 mx-auto px-0 py-4">
         <HeroSection id="Hero" />
@@ -27,9 +29,13 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         <EmailSection />
+
+        {/* <ChatBubbleOvalLeftIcon className="h-6 w-6" /> */}
+
+
       </div>
 
       <Footer />
-    </main>
+    </main >
   );
 }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Wave from "react-wavify";
 
+
 const DecSection = () => {
   const ref = useRef(null); // Used only on the section
 
@@ -76,6 +77,7 @@ const DecSection = () => {
           </mask>
         </defs>
       </Wave>
+   
     </section>
   );
 };

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -7,9 +7,11 @@ import Link from "next/link";
 import Wave from 'react-wavify'; //React-Wave https://www.npmjs.com/package/react-wavify
 
 
-const HeroSection = () => {
+const HeroSection = ({ id }) => {
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <section className="lg:py-full lg:px-full lg: pb-30" id="Hero">
+    <section className="lg:py-full lg:px-full lg: pb-30" id={id}>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         {/* // Wave animation for background effect */}
         <motion.div
@@ -53,9 +55,11 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-bl from-primary-500 to-secondary-500 hover:bg-slate-200 text-white hover:bg-gradient-to-br hover:from-primary-500 hover:to-secondary-500 hover:text-slate-950 hover:font-bold"
+              className="px-6 inline-block py-3 w-32 sm:w-32 rounded-full mr-4 bg-gradient-to-bl from-primary-500 to-secondary-500 hover:bg-slate-200 text-white hover:bg-gradient-to-br hover:from-primary-500 hover:to-secondary-500 hover:text-slate-950 hover:font-bold text-center"
+              onMouseEnter={() => setHovered(true)}
+              onMouseLeave={() => setHovered(false)}
             >
-              Hire Me
+              {hovered ? "Please" : "Hire Me"}
             </Link>
             <a
               href="/sampleResume.pdf"
