@@ -65,7 +65,7 @@ const projectsData = [
 ];
 
 const ProjectsSection = () => {
-  // State to manage the selected tag
+  // State to manage the prpject section animation
   // Using useState to manage the currently selected tag
   // Default is "All" to show all projects initially
   const [tag, setTag] = useState("All");

@@ -10,12 +10,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-once': 'spin-once 1s linear forwards',
+        "spin-once": "spin-once 1s linear forwards",
       },
       keyframes: {
-        'spin-once': {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+        "spin-once": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
         },
       },
       backgroundImage: {
@@ -24,7 +24,14 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        ...colors,
+        // Core palette you actually use; avoid spreading everything to dodge renamed/deprecated keys
+        sky: colors.sky,
+        stone: colors.stone,
+        neutral: colors.neutral,
+        gray: colors.gray,
+        slate: colors.slate,
+        indigo: colors.indigo,
+        pink: colors.pink,
         primary: colors.indigo,
         secondary: colors.pink,
       },
