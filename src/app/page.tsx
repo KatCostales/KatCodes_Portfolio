@@ -10,6 +10,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 
+
 import DecSection from "./components/DecSection";
 
 export default function Home() {
